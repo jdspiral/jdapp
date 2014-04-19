@@ -42,19 +42,21 @@ class MandrillDelivery
   def send_mandrill(mail)
     m = Mandrill::API.new
 
-    sending = m.messages.send_template('Sign-Up Confirmation',
-                                       [
-                                        {
-                                          :name => 'main',
-                                          :content => "#{mail.body}"
-                                        },
-                                        {
-                                          :name => 'unsub',
-                                          :content => "#{mail['unsub_link']}"
-                                        }
-                                       ],
-                                       message = @message)
-    Rails.logger.info sending
+   message = {  
+ :subject=> "Hello from the Mandrill API",  
+ :from_name=> "Your name",  
+ :text=>"Hi message, how are you?",  
+ :to=>[  
+   {  
+     :email=> "recipient@theirdomain.com",  
+     :name=> "Recipient1"  
+   }  
+ ],  
+ :html=>"<html><h1>Hi <strong>message</strong>, how are you?</h1></html>",  
+ :from_email=>"sender@yourdomain.com"  
+}  
+sending = m.messages.send message  
+puts sending
   end
 
 end
