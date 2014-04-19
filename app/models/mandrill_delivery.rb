@@ -48,12 +48,12 @@ class MandrillDelivery
  :text=>"Hi message, how are you?",  
  :to=>[  
    {  
-     :email=> "recipient@theirdomain.com",  
+     :email=> "jdspiral@gmail.com",  
      :name=> "Recipient1"  
    }  
  ],  
  :html=>"<html><h1>Hi <strong>message</strong>, how are you?</h1></html>",  
- :from_email=>"sender@yourdomain.com"  
+ :from_email=>"jdspiral@gmail.com"  
 }  
 sending = m.messages.send message  
 puts sending
