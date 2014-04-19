@@ -22,8 +22,8 @@ class MandrillDelivery
       :subject=> "#{mail['subject']}",
       :to=>[
             {
-              :email=> "#{mail['user.email']}",
-              :name=> "#{mail['user.name']}"
+              :email=> "#{mail['to']}",
+              :name=> "#{mail['name']}"
             }
            ],
       :auto_text => true,
@@ -45,12 +45,7 @@ class MandrillDelivery
    message = {  
  :subject=> "Thanks for signing up!",  
  :from_name=> "Josh Hathcock",  
- :text=>"Thanks for signing up to my mailing list! This message is sent to you via Mandrill's API :)",  
- :to=>[  
-   {  
-     :email=> user.email,  
-     :name=> user.name  
-   }  
+ :text=>"Thanks for signing up to my mailing list! This message is sent to you via Mandrill's API :)",    
  ],  
  :from_email=>"jdspiral@gmail.com"  
 }  
