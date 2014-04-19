@@ -49,7 +49,7 @@ class MandrillDelivery
  :to=>[  
    {  
      :email=> "",  
-     :name=> "yoyoyo"  
+     :name=> "yoyoyoy"  
    }  
  ],  
  :from_email=>"jdspiral@gmail.com"  
