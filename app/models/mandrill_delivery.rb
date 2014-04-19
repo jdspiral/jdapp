@@ -13,5 +13,3 @@ message = {
  :html=>"<html><h1>Hi <strong>message</strong>, how are you?</h1></html>",  
  :from_email=>"jdspiral@gmail.com"  
 }  
-sending = m.messages.send message  
-puts sending
