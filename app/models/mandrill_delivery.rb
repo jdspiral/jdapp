@@ -22,8 +22,8 @@ class MandrillDelivery
       :subject=> "#{mail['subject']}",
       :to=>[
             {
-              :email=> "#{mail['jdspiral@gmail.com']}",
-              :name=> "#{mail['name']}"
+              :email=> "#{mail['@user.email']}",
+              :name=> "#{mail['@user.name']}"
             }
            ],
       :auto_text => true,
