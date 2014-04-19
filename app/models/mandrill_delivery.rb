@@ -43,16 +43,15 @@ class MandrillDelivery
     m = Mandrill::API.new
 
    message = {  
- :subject=> "Hello from the Mandrill API",  
- :from_name=> "Your name",  
- :text=>"Hi message, how are you?",  
+ :subject=> "Thanks for signing up!",  
+ :from_name=> "Josh Hathcock",  
+ :text=>"Thanks for signing up to my mailing list! This message is sent to you via Mandrill's API :)",  
  :to=>[  
    {  
-     :email=> "jdspiral@gmail.com",  
-     :name=> "Recipient1"  
+     :email=> "",  
+     :name=> "yoyoyo"  
    }  
  ],  
- :html=>"<html><h1>Hi <strong>message</strong>, how are you?</h1></html>",  
  :from_email=>"jdspiral@gmail.com"  
 }  
 sending = m.messages.send message  
