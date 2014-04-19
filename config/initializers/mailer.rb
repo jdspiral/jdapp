@@ -1,1 +1,1 @@
-ActionMailer::Base.add_delivery_method :mandrill_delivery
+ActionMailer::Base.add_delivery_method :mandrill_delivery, Mandrill::API,ENV['MANDRILL_PASSWORD']
