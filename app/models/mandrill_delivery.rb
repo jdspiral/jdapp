@@ -18,11 +18,11 @@ class MandrillDelivery
     #build Mandrill message hash
     @message = {
       :from_name=> "Admin",
-      :from_email=>"admin@somewhere.com",
+      :from_email=>"jdspiral@gmail.com",
       :subject=> "#{mail['subject']}",
       :to=>[
             {
-              :email=> "#{mail['to']}",
+              :email=> "#{mail['jdspiral@gmail.com']}",
               :name=> "#{mail['name']}"
             }
            ],
