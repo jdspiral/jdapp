@@ -36,7 +36,7 @@ Jdapp::Application.configure do
   port:                 587,
   domain:               'localhost:3000',
   user_name:            'jdspiral@gmail.com',
-  password:             'Turtlewax85!',
+  password:             '',
   authentication:       'plain',
   enable_starttls_auto: true  }
 end

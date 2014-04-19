@@ -84,11 +84,11 @@ Jdapp::Application.configure do
   config.action_mailer.default_options = {from: 'jdspiral@gmail.com'}
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-  address:              'smtp.gmail.com',
+  address:              'smtp.mandrillapp.com',
   port:                 587,
   domain:               'http://peaceful-forest-3344.herokuapp.com/',
   user_name:            'jdspiral@gmail.com',
-  password:             'Turtlewax85!',
+  password:             'JYZllBrwdDX4U7XyhLrrPg',
   authentication:       'plain',
   enable_starttls_auto: true  }
 
