@@ -16,7 +16,7 @@ gem 'coffee-rails', '~> 4.0.0'
 # gem 'therubyracer', platforms: :ruby
 
 # Mandrill APIs
-gem 'mandrill_mailer'
+gem 'mandrill-api'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

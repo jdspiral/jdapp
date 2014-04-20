@@ -1,15 +1,19 @@
-ActionMailer::Base.smtp_settings = {
-    :address   => "smtp.mandrillapp.com",
-    :port      => 587,
-    :user_name => ENV['MANDRILL_USERNAME'],
-    :password  => ENV['MANDRILL_PASSWORD'],
-    :domain    => 'http://peaceful-forest-3344.herokuapp.com/',
-    authentication: 'plain'
-  }
-#ActionMailer::Base.delivery_method = :smtp
-
-MandrillMailer.configure do |config|
-  config.api_key = ENV['MANDRILL_API_KEY']
-end
+require 'mandrill'  
+m = Mandrill::API.new
+message = {  
+ :subject=> "Hello from the Mandrill API",  
+ :from_name=> "Your name",  
+ :text=>"Hi message, how are you?",  
+ :to=>[  
+   {  
+     :email=> "recipient@theirdomain.com",  
+     :name=> "Recipient1"  
+   }  
+ ],  
+ :html=>"<html><h1>Hi <strong>message</strong>, how are you?</h1></html>",  
+ :from_email=>"sender@yourdomain.com"  
+}  
+sending = m.messages.send message  
+puts sending
 
 # ActionMailer::Base.add_delivery_method :mandrill_delivery, MandrillDelivery
