@@ -3,7 +3,8 @@ ActionMailer::Base.smtp_settings = {
     :port      => 587,
     :user_name => ENV['MANDRILL_USERNAME'],
     :password  => ENV['MANDRILL_PASSWORD'],
-    :domain    => 'http://peaceful-forest-3344.herokuapp.com/'
+    :domain    => 'http://peaceful-forest-3344.herokuapp.com/',
+    :authentication:       'plain'
   }
 ActionMailer::Base.delivery_method = :smtp
 

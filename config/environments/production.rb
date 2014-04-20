@@ -82,15 +82,15 @@ Jdapp::Application.configure do
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.default_options = {from: 'jdspiral@gmail.com'}
-  config.action_mailer.delivery_method = :mandrill_delivery #:smtp
-  config.action_mailer.smtp_settings = {
-  address:              'smtp.mandrillapp.com',
-  port:                 587,
-  domain:               'http://peaceful-forest-3344.herokuapp.com/',
-  user_name:            ENV["MANDRILL_USERNAME"],
-  password:             ENV["MANDRILL_PASSWORD"],
-  authentication:       'plain',
-  enable_starttls_auto: true  }
+  # config.action_mailer.delivery_method = :mandrill_delivery #:smtp
+  # config.action_mailer.smtp_settings = {
+  # address:              'smtp.mandrillapp.com',
+  # port:                 587,
+  # domain:               'http://peaceful-forest-3344.herokuapp.com/',
+  # user_name:            ENV["MANDRILL_USERNAME"],
+  # password:             ENV["MANDRILL_PASSWORD"],
+  # authentication:       'plain',
+  # enable_starttls_auto: true  }
 
 
 end
