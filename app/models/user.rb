@@ -1,4 +1,4 @@
 class User < ActiveRecord::Base
-	validates :name, :email, presence: true,
-	length: { minimum: 5 }
+	validates :name, presence: true
+	validates :email, presence: true
 end
