@@ -45,7 +45,13 @@ class MandrillDelivery
    message = {  
  :subject=> "Thanks for signing up!",  
  :from_name=> "Josh Hathcock",  
- :text=>"Thanks for signing up to my mailing list! This message is sent to you via Mandrill's API :)",  
+ :text=>"Thanks for signing up to my mailing list! This message is sent to you via Mandrill's API :)", 
+ :to=>[  
+   {  
+     :email=> "",  
+     :name=> "Recipient1"  
+   }  
+ ], 
  :from_email=>"jdspiral@gmail.com"  
 }  
 sending = m.messages.send message  
