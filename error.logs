@@ -1,0 +1,32 @@
+Fetching repository, done.
+
+-----> Ruby app detected
+-----> Compiling Ruby/Rails
+-----> Using Ruby version: ruby-2.0.0
+-----> Installing dependencies using 1.5.2
+       Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+       You are trying to install in deployment mode after changing
+       your Gemfile. Run `bundle install` elsewhere and add the
+       updated Gemfile.lock to version control.
+       You have added to the Gemfile:
+       * mandrill-api
+       You have deleted from the Gemfile:
+       * mandrill_mailer
+       Bundler Output: You are trying to install in deployment mode after changing
+       your Gemfile. Run `bundle install` elsewhere and add the
+       updated Gemfile.lock to version control.
+       
+       You have added to the Gemfile:
+       * mandrill-api
+       
+       You have deleted from the Gemfile:
+       * mandrill_mailer
+ !
+ !     Failed to install gems via Bundler.
+ !
+
+ !     Push rejected, failed to compile Ruby app
+
+To git@heroku.com:peaceful-forest-3344.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'git@heroku.com:peaceful-forest-3344.git'

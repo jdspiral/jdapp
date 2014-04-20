@@ -1,26 +1,12 @@
-class UserMailer < ActionMailer::TemplateMailer
+class UserMailer < ActionMailer::Base
   default from: "jdspiral@gmail.com"
 
   def welcome_email(user)
-  	
-  	mandrill_mail template: 'sign-up-notification'
-  	subject: "Thanks for signing up!"
-  	to {email: user.email, name: user.name},
-  	async: true
+
+  	@user = user
+
+  	mail(to: @user.email, 
+  	name: @user.name,
+  	subject: "Welcome!")
   end
 end
-
-
-
-
-#   	@user = user
-
-#   	mail(to: @user.email, 
-#   	name: @user.name,
-#   	subject: "Welcome!"
-#   	vars: {
-#         'USER_NAME' => user.name,
-#         'USER_EMAIL' => user.email
-#       })
-#   end
-# end
