@@ -58,22 +58,3 @@
 # #   #sends email via Mandrill
 # #   def send_mandrill(mail)
 # #   end
-
-# # end
-require 'mandrill'  
-m = Mandrill::API.new
-message = {  
- :subject=> "Hello from the Mandrill API",  
- :from_name=> "Your name",  
- :text=>"Hi message, how are you?",  
- :to=>[  
-   {  
-     :email=> user:email,  
-     :name=> user:name  
-   }  
- ],  
- :html=>"<html><h1>Hi <strong>message</strong>, how are you?</h1></html>",  
- :from_email=>"sender@yourdomain.com"  
-}  
-sending = m.messages.send message  
-puts sending
