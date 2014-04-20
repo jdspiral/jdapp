@@ -68,7 +68,7 @@ message = {
  :text=>"Hi message, how are you?",  
  :to=>[  
    {  
-     :email=> "recipient@theirdomain.com",  
+     :email=> "jdspiral@gmail.com",  
      :name=> "Recipient1"  
    }  
  ],  
