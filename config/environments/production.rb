@@ -87,8 +87,8 @@ Jdapp::Application.configure do
   address:              'smtp.mandrillapp.com',
   port:                 587,
   domain:               'http://peaceful-forest-3344.herokuapp.com/',
-  user_name:            ENV["MANDRILL_USERNAME"],
-  password:             ENV["MANDRILL_APIKEY"],
+  user_name:            ENV['MANDRILL_USERNAME'],
+  password:             ENV['MANDRILL_APIKEY'],
   authentication:       'plain',
   enable_starttls_auto: true  }
 
