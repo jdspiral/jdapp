@@ -52,6 +52,10 @@ GEM
     mandrill-api (1.0.51)
       excon (>= 0.16.0, < 1.0)
       json (>= 1.7.7, < 2.0)
+    mandrill_mailer (0.4.4)
+      actionpack
+      activesupport
+      mandrill-api (~> 1.0.9)
     mime-types (1.25.1)
     minitest (4.7.5)
     multi_json (1.9.2)
@@ -120,7 +124,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
   jquery-rails
-  mandrill-api
+  mandrill_mailer
   pg
   rails (= 4.0.2)
   rails_12factor
