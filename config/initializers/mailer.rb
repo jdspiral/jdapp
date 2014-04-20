@@ -4,7 +4,7 @@ ActionMailer::Base.smtp_settings = {
     :user_name => ENV['MANDRILL_USERNAME'],
     :password  => ENV['MANDRILL_PASSWORD'],
     :domain    => 'http://peaceful-forest-3344.herokuapp.com/',
-    :authentication:       'plain'
+    authentication: 'plain'
   }
 #ActionMailer::Base.delivery_method = :smtp
 
