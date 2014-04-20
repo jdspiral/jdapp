@@ -86,7 +86,7 @@ Jdapp::Application.configure do
   config.action_mailer.smtp_settings = {
   address:              'smtp.mandrillapp.com',
   port:                 587,
-  domain:               'http://peaceful-forest-3344.herokuapp.com/',
+  domain:               'http://jdapp.herokuapp.com/',
   user_name:            ENV['MANDRILL_USERNAME'],
   password:             ENV['MANDRILL_APIKEY'],
   authentication:       'plain',
