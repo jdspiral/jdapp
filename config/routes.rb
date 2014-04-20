@@ -9,6 +9,7 @@ Jdapp::Application.routes.draw do
   # root 'welcome#index'
   root "pages#index"
   get "about" => "pages#about"
+  get "app" => "pages#app"
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
