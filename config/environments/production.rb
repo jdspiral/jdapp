@@ -81,7 +81,8 @@ Jdapp::Application.configure do
   # Email Settings
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default_options = {from: 'jdspiral@gmail.com'}
+  #config.action_mailer.default_options = {from: 'jdspiral@gmail.com'}
+  config.mandrill_mailer.default_url_options = { :host => 'http://peaceful-forest-3344.herokuapp.com/'}
   config.action_mailer.delivery_method = :smtp #:mandrill_delivery
   # config.action_mailer.smtp_settings = {
   # address:              'smtp.mandrillapp.com',
