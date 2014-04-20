@@ -68,8 +68,8 @@ message = {
  :text=>"Hi message, how are you?",  
  :to=>[  
    {  
-     :email=> @user.email,  
-     :name=> @user.name  
+     :email=> User.email,  
+     :name=> User.name  
    }  
  ],  
  :html=>"<html><h1>Hi <strong>message</strong>, how are you?</h1></html>",  
