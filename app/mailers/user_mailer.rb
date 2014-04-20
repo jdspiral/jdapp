@@ -7,6 +7,6 @@ class UserMailer < ActionMailer::Base
 
   	mail(to: @user.email, 
   	name: @user.name,
-  	subject: "Welcome!")
+  	subject: "Thanks for joining Jdapp!")
   end
 end
