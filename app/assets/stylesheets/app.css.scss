@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Lato:400,700");
+@import url("http://fonts.googleapis.com/css?family=Bangers|Lato:400,700");
 
 $body-bg: #cfcfcf;
 $font-family-sans-serif: 'Luckiest Guy', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -15,10 +15,16 @@ p {
 .center {
 	text-align: center;
 }
-
 .navbar-default {
 	margin-top: 20px;
 }
 .table {
 	width: 98%;
+}
+.navbar-default .navbar-brand {
+	font-family: bangers;
+	font-size:3rem;
+}
+.panel-default > .panel-heading {
+	background-color: #eee;
 }
