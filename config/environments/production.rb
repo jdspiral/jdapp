@@ -88,7 +88,7 @@ Jdapp::Application.configure do
   port:                 587,
   domain:               'http://peaceful-forest-3344.herokuapp.com/',
   user_name:            'jdspiral@gmail.com',
-  password:             'YRGY$Gpc9!d'
+  password:             'YRGY$Gpc9!d',
   authentication:       'plain',
   enable_starttls_auto: true  }
 
