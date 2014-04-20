@@ -48,8 +48,8 @@ class MandrillDelivery
  :text=>"Thanks for signing up to my mailing list! This message is sent to you via Mandrill's API :)", 
  :to=>[  
    {  
-     :email=> #{@user.email},  
-     :name=> #{@user.email}  
+     :email=> user,  
+     :name=> user  
    }  
  ], 
  :from_email=>"jdspiral@gmail.com"  
