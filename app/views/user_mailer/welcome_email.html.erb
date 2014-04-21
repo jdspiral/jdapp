@@ -8,7 +8,8 @@
     <p>
       You have successfully signed up to Jdapp!
     </p>
-    <p>You can also go ahead and delete yourself <%= link_to 'Destroy', @user, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+    <p>You can also go ahead and delete yourself <% @user.destroy %></p>
+    <%= link_to 'Destroy', users_path, method: :delete, data: { confirm: 'Are you sure?' } %>
     <p>Have a great day!</p>
   </body>
 </html>
