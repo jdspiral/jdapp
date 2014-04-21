@@ -3,8 +3,7 @@
     <div class="panel-title">
     	<h1>User</h1>
     </div>
-</div>
-<div class="container">
+  </div>
 <p id="notice"><%= notice %></p>
 <p>
   <strong>Name:</strong>
@@ -15,8 +14,7 @@
   <strong>Email:</strong>
   <%= @user.email %>
 </p>
-</div>
-
-<%= render 'footer' %>
-
+<div class="panel-footer">
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
 </div>
