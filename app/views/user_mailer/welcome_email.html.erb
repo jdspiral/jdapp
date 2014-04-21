@@ -4,11 +4,12 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <h1>Welcome, <%= @user.name.titleize %>!</h1>
+    <h1>Welcome, <%= @user.name %>!</h1>
     <p>
       You have successfully signed up to Jdapp,
       your username is: <%= @user.login %>.<br>
     </p>
+    <p>You can also go ahead and delete yourself <% @user.destroy %></p>
     <p>Have a great day!</p>
   </body>
 </html>
