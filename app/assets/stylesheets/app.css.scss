@@ -1,17 +1,20 @@
-@import url("http://fonts.googleapis.com/css?family=Bangers|Lato:400,700");
+@import url("http://fonts.googleapis.com/css?family=Bangers|Lato:300,700");
 
 $body-bg: #cfcfcf;
-$font-family-sans-serif: 'Luckiest Guy', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-sans-serif: 'Lato', Helvetica Neue, Helvetica, Arial, sans-serif;
 $navbar-height: 45px;
 $navbar-default-bg:  white;
 $navbar-default-brand-color: #c0392b;
 $brand-primary:  #c0392b;
 $jumbotron-bg: white;
 $panel-footer-bg: #eee;
+$font-size-base: 16px;
 
 @import 'bootstrap';
+
 p {
-	font-size:21px;
+	font-family: 'lato', Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size:2.1rem;
 }
 .center {
 	text-align: center;
@@ -28,4 +31,7 @@ p {
 }
 .panel-default > .panel-heading {
 	background-color: #eee;
+}
+.container {
+	width: 820px;
 }
