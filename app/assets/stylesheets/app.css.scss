@@ -9,7 +9,6 @@ $brand-primary:  #c0392b;
 $jumbotron-bg: white;
 $panel-footer-bg: #eee;
 $font-size-base: 16px;
-$container-md: 820px;
 
 @import 'bootstrap';
 
@@ -36,4 +35,8 @@ p {
 }
 .panel-body {
 	width: 91%;
+}
+
+@media (min-width: $screen-md-min) {
+	max-width:820px;
 }
