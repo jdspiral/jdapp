@@ -37,9 +37,8 @@ p {
 	width: 91%;
 }
 
-// @media (min-width: 992px) {
-// 	.container {
-// 	max-width:820px;	
-// 	}
-
-// }
+@media (min-width: 992px) {
+	.container {
+	max-width:820px;	
+	}
+}
