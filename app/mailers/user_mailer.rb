@@ -3,7 +3,7 @@ class UserMailer < MandrillMailer::TemplateMailer
 
   def welcome_email(user)
   	mandrill_mail template: 'sign-up-notification',
-	subject: "Jdapp Can Has a Gift for You!",
+	subject: "Jdapp Has a Gift for You!",
 	from_name: "Josh Hathcock",
 	to: {email: user.email, name: user.name},
 	vars: { 
