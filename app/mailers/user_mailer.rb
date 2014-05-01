@@ -3,10 +3,13 @@ class UserMailer < MandrillMailer::TemplateMailer
 
   def welcome_email(user)
   	mandrill_mail template: 'sign-up-notification',
-  		subject: "Thanks for joining Mandrill API!",
-  		to: {email: user.email, name: user.name},
-	      important: true,
-	      inline_css: true,
-	      async: true
+	subject: "Jdapp Can Has a Gift for You!",
+	from_name: "Josh Hathcock",
+	to: {email: user.email, name: user.name},
+	headers: {reply_to: "josh@interactivesearchmarketing.com" },
+    important: true,
+    inline_css: true,
+    async: true,
+    track_clicks: true
   end
 end
