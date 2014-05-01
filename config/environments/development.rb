@@ -32,11 +32,11 @@ Jdapp::Application.configure do
   config.action_mailer.default_options = {from: 'jdspiral@gmail.com'}
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-  address:              'smtp.gmail.com',
+  address:              'smtp.mandrillapp.com',
   port:                 587,
   domain:               'localhost:3000',
-  user_name:            'jdspiral@gmail.com',
-  password:             '',
+  user_name:            ENV['MANDRILL_USERNAME'],
+  password:             ENV['MANDRILL_APIKEY'],
   authentication:       'plain',
   enable_starttls_auto: true  }
 end

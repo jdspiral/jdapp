@@ -16,7 +16,10 @@ gem 'coffee-rails', '~> 4.0.0'
 # gem 'therubyracer', platforms: :ruby
 
 # Mandrill APIs
-gem 'mandrill-api'
+gem 'mandrill_mailer'
+
+# Enviroment Variables Storage
+gem 'dotenv-rails', :groups => [:development, :test]
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
