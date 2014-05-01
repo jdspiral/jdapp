@@ -6,7 +6,9 @@ class UserMailer < MandrillMailer::TemplateMailer
 	subject: "Jdapp Can Has a Gift for You!",
 	from_name: "Josh Hathcock",
 	to: {email: user.email, name: user.name},
-	headers: {reply_to: "josh@interactivesearchmarketing.com" },
+	vars: { 
+		'USER_NAME' => user.name
+	},
     important: true,
     inline_css: true,
     async: true,
