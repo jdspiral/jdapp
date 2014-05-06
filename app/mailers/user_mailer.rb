@@ -1,5 +1,5 @@
 class UserMailer < MandrillMailer::TemplateMailer
-  default from: "josh@jdspiral.com"
+  default from: "jdspiral@gmail.com"
 
   def welcome_email(user)
   	mandrill_mail template: 'sign-up-notification',
@@ -13,6 +13,5 @@ class UserMailer < MandrillMailer::TemplateMailer
     inline_css: true,
     async: true,
     track_clicks: true
-    bcc: "josh@jdspiral.com"
   end
 end
